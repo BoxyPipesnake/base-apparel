@@ -114,6 +114,7 @@ button {
     .wrapper {
         display: grid;
         grid-template-columns: 0.7fr 0.5fr;
+        column-gap: 9rem;
     }
 
     .img-container {
@@ -129,7 +130,6 @@ button {
         margin-top: 0;
         margin-bottom: 0;
         padding-left: 9rem;
-        padding-right: 9rem;
     }
 
     .header {
