@@ -25,4 +25,51 @@ html {
 body {
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     font-family: var(--ff);
+    min-height: 100vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--dark-grayish);
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    line-height: 1.2;
+}
+
+img {
+    display: block;
+}
+
+input {
+    display: block;
+}
+
+
+.principal-image {
+    min-width: 100%;
+}
+
+.header, .container {
+    margin: 2rem;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.p-main {
+    line-height: 1.2;
+}
+
+.red, .p-main {
+    color: var(--desaturated-red);
+}
+
+.red {
+    display: block;
+    font-size: 2.3rem;
+    font-weight: 300;
 }
