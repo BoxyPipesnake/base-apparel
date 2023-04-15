@@ -82,7 +82,7 @@ button {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
-    border: 1px solid var(--soft-red);
+    border: 1px solid var(--desaturated-red);
     border-radius: 25px;
 }
 
@@ -104,4 +104,8 @@ button {
     position: absolute;
     right: -13px;
     background: linear-gradient(135deg,  hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.submit:hover {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), var(--desaturated-red));
 }
