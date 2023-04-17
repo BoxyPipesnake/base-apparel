@@ -26,6 +26,7 @@ body {
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     font-family: var(--ff);
     min-height: 100vh;
+    display: flex;
 }
 
 h1 {
@@ -153,4 +154,8 @@ button {
         font-size: 1.2rem;
     }
 
+}
+
+#empty {
+    display: none;
 }

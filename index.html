@@ -52,14 +52,43 @@
         <label for="email">
           <input class="email" type="email" id="email" placeholder="Email Address" required="true">
         </label>
-        <button class="submit" type="submit"><img src="images/icon-arrow.svg" alt=""></button>
+        <button onclick="ValidateEmail()" class="submit" type="submit"><img src="images/icon-arrow.svg" alt=""></button>
+        <p id="empty"></p>
       </form>
     </main>
 
   </div>
 
   <script>
-    console.log('hi')
+    function ValidateEmail(input) {
+
+
+      let mail = document.getElementById('email').value;
+      let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      let empty = document.getElementById('empty');
+
+      if (mail.match(validRegex)) {
+
+        alert("Valid email address!");
+
+        return true;
+
+      } else {
+
+        // alert("Invalid email address!");
+        empty.textContent = 'Please provide a valid email';
+        empty.style.display = "block";
+        empty.style.position = "absolute"
+        empty.style.fontSize = "13px";
+        empty.style.color = "hsl(0, 36%, 70%)"
+        empty.style.bottom = "-24px"
+        empty.style.left = "24px";
+
+        return false;
+
+      }
+
+      }
   </script>
 
   <!-- <footer>
