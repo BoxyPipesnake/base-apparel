@@ -31,6 +31,11 @@ body {
 }
 
 
+button {
+    width: 0;
+    height: 0;
+}
+
 .main-text__heading--red {
   color: var(--desaturated-red);
 }
