@@ -32,6 +32,7 @@ body {
 
 button {
     border: none;
+    border-style: none;
 }
 
 .main-text__heading--red {
