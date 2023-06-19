@@ -63,16 +63,23 @@ body {
 }
 
 .errorInput {
-  color: var(--soft-red);
-  font-size: 14px;
-  padding-left: 1rem;
+    color: var(--soft-red);
+    font-size: 14px;
+    padding-left: 1rem;
+}
+
+.successInput {
+    color: rgb(8, 191, 8);
+    font-size: 14px;
+    padding-left: 1rem;
 }
 
 .errorIcon {
     position: absolute;
     top: 9px;
-  right: 74px;
+    right: 74px;
 }
+
 
 div .email::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
