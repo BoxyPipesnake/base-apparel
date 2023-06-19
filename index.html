@@ -33,7 +33,7 @@
     <main class="row flex-column main-container d-md-grid">
       <div class="order-1 p-4 ps-md-5 pe-md-5 pt-md-5 pb-md-0 ms-md-5"><img class="" src="images/logo.svg" alt=""></div>
       <section class="col order-3 ps-md-5 pe-md-5 align-self-md-center">
-        <article class="container text-center text-md-start mt-5 ms-md-5">
+        <article class="container text-center text-md-start mt-5 mt-md-3 ms-md-5">
           <div class="content">
             <div class="main-text d-md-flex flex-md-column gap-3">
               <h1 class="text-uppercase fw-bold letter-spacing font-size__heading"><span class="d-block fw-light main-text__heading--red">We´re</span> coming <span class="d-block">soon</span></h1>
@@ -52,8 +52,13 @@
         </article>
       </section>
       <section class="col p-0 order-2 grid vh-100">
-        <!-- <img src="images/hero-mobile.jpg" alt="" class="img-fluid w-100"> -->
-        <img src="images/hero-desktop.jpg" class="img-fluid mh-100 w-100 object-fit-cover" alt="">
+        <picture>
+          
+          <source srcset="images/hero-mobile.jpg" media="(max-width: 767px)">
+          
+          <source srcset="images/hero-desktop.jpg">
+          <img src="images/hero-desktop.jpg" class="img-fluid mh-100 w-100 object-fit-contain" alt="">
+        </picture>
       </section>
     </main>  
   </div>
